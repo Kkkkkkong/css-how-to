@@ -1,0 +1,188 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CSS HOW TO</title>
+  <style>
+
+  .image {
+    display:block;
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .wrapper {
+    width:800px;
+    margin-left: auto;
+    margin-right: auto;
+    background: lightcyan;
+    padding: 40px;
+  }
+.bigtitle {
+  margin-top: auto;
+}
+  h1 {
+    margin-top: 90px;
+    text-align: center;
+    font-family:avenir next;
+  }
+
+  p,ol,ul {
+      font-family: avenir next;
+      font-weight: ultralight;
+      font-size: 18px
+  }
+.list {
+  border-left: 6px solid lime;
+  margin: 30px 120px;
+}
+
+.ulist {
+  border-left: 6px solid lime;
+  margin: 30px 100px;
+}
+
+</style>
+</head>
+
+<body>
+ <div class="wrapper">
+  <h1 class="bigtitle">What is CSS?</h1>
+
+  <ol class="list">
+  	<li><strong>CSS</strong> stands for Cascading Style Sheets</li>
+  	<li>CSS describes
+      <strong>how HTML elements are to be displayed on screen, paper, or in other media</strong></li>
+  	<li>CSS<strong> saves a lot of work.</strong> It can control the layout of multiple web pages all at once</li>
+    <li>External stylesheets are stored in <strong>CSS files</strong></li>
+  </ol>
+
+  <h1>CSS Syntax</h1>
+    <p>
+      A CSS rule-set consists of a selector and a declaration block:
+    </p>
+    <img src="1.png" class="image">
+    <p>
+  The selector points to the HTML element you want to style.
+
+  The declaration block contains one or more declarations separated by semicolons.
+
+  Each declaration includes a CSS property name and a value, separated by a colon.
+
+  A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.
+    </p>
+
+  <h1>The element Selector</h1>
+    <p>
+      The element selector selects elements based on the element name.
+    You can select all < p> elements on a page like this (in this case, all < p> elements will be center-aligned, with a red text color):
+  </p>
+      <img src="2.png" class="image">
+
+
+<h1>The id Selector</h1>
+    <p>
+      The id selector uses the id attribute of an HTML element to select a specific element.
+
+The id of an element should be unique within a page, so the id selector is used to select one unique element!
+
+To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+
+The style rule below will be applied to the HTML element with id="para1":
+
+Example
+</p>
+  <img src="3.png" class="image">
+
+<h1>The class Selector</h1>
+    <p>
+          The id selector uses the id attribute of an HTML element to select a specific element.
+
+    The id of an element should be unique within a page, so the id selector is used to select one unique element!
+
+    To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+
+    The style rule below will be applied to the HTML element with id="para1":
+
+    Example
+    </p>
+    <img src="4.png" class="image">
+
+<h1>Grouping Selectors</h1>
+    <p>
+    If you have elements with the same style definitions, like this:
+  </p>
+    <img src="5.png" class="image">
+
+    <p>
+    It will be better to group the selectors, to minimize the code.
+To group selectors, separate each selector with a comma.
+In the example below we have grouped the selectors from the code above:
+    </p>
+<img src="6.png" class="image">
+
+<h1>CSS Comments</h1>
+    <p>
+      Comments are used to explain the code, and may help when you edit the source code at a later date.
+
+  Comments are ignored by browsers.
+
+  A CSS comment starts with /* and ends with */. Comments can also span multiple lines:
+  </p>
+    <img src="7.png" class="image">
+
+<h1>Three Ways to Insert CSS</h1>
+
+<ul class="ulist" >
+  <li>External style sheet</li>
+  <li>Internal style sheet</li>
+  <li>Inline style</li>
+</ul>
+
+<h1>External Style Sheet</h1>
+    <p>
+      With an external style sheet, you can change the look of an entire website by changing just one file!
+
+Each page must include a reference to the external style sheet file inside the < link> element. The < link> element goes inside the < head> section:
+  </p>
+    <img src="8.png" style="display:block;
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;">
+
+    <p>
+    An external style sheet can be written in any text editor. The file should not contain any html tags. The style sheet file must be saved with a .css extension.
+
+Here is how the "myStyle.css" looks:
+    </p>
+    <img src="9.png" class="image">
+
+    <h1>Internal Style Sheet</h1>
+    <p>
+
+An internal style sheet may be used if one single page has a unique style.
+Internal styles are defined within the < style> element, inside the < head> section of an HTML page:
+</p>
+        <img src="10.png" class="image">
+
+  <h1>Inline Styles</h1>
+    <p>
+      An inline style may be used to apply a unique style for a single element.
+
+    To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
+
+    The example below shows how to change the color and the left margin of a < h1> element:
+    </p>
+    <img src="11.png" style="display:block;
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;">
+
+    <h1 style="font-size: 100px;margin-top:350px;margin-bottom:300px;"> THE END</h1>
+
+<div/>
+</body>
+</html>
